@@ -1,6 +1,4 @@
 import requests
-import sys
-from PyQt5 import QtWidgets, QtCore
 
 def process_response_status(status_code, isbn_input):
     if response.status_code == 200:
@@ -35,15 +33,6 @@ def process_json_parsing(isbn_input):
         print(f"Publish Date: {publish_date}")
     else:
         print("No details found for the provided ISBN.")
-
-# APPLICATION WINDOW:
-
-# app = QtWidgets.QApplication(sys.argv)
-# widget = QtWidgets.QWidget()
-# widget.resize(800, 600)
-# widget.setWindowTitle("This is PyQt Widget example")
-# widget.show()
-# exit(app.exec_())
 
 # Prompt the user for an ISBN
 isbn_input = input("Please enter an ISBN: ")
